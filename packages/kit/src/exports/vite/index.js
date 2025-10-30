@@ -931,7 +931,7 @@ async function kit({ svelte_config }) {
 			} else {
 				new_config = {
 					appType: 'custom',
-					base: kit.paths.base,
+					base: kit.paths.base || '/',
 					build: {
 						rollupOptions: {
 							// Vite dependency crawler needs an explicit JS entry point
